@@ -1,0 +1,227 @@
+.discoverNFT_main {
+    background-color: #D9E0EC33;
+    padding: 15px 10px;
+    margin: 85px 0 0 0;
+}
+
+.discoverNFT_main h2 {
+    text-transform: uppercase;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 60px;
+}
+
+.discoverNFT_main .discover_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discoverNFT_main .discover_header .left_block {
+   max-width: 50%;
+}
+
+.discoverNFT_main .discover_header .left_block ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.discoverNFT_main .discover_header .left_block ul li {
+    list-style: none;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 4px 15px;
+    margin: 2px;
+    border-radius: 18px;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.discoverNFT_main .discover_header .left_block ul li:hover,
+.discoverNFT_main .discover_header .left_block ul li.active {
+    cursor: pointer;
+    background-color: #5539A8;
+    color: #ffffff;
+}
+
+.discoverNFT_main .discover_header .right_block_filter {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #000000;
+    padding: 5px 15px;
+    background-color: #F7F9FB;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150pxpx;
+    min-width: 122px;
+    border: 1px solid;
+}
+
+.discoverNFT_main .discover_header .right_block_filter .filter_icon {
+    height: 24px;
+    width: 24px;
+    color: #371C87;
+    font-weight: 500;
+}
+
+.discoverNFT_main .discover_header .right_block_filter:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.discoverNFT_main .discover_cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.discoverNFT_main .discover_cards .single_card {
+    height: 375px;
+    width: 270px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 34px 5px #f5e9e9;
+    border-radius: 18px;
+    margin: 5px;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block {
+    position: relative;
+    height: 225px;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block .stack {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    bottom: -22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block .stack .single_person {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* position: absolute; */
+    margin-left: -12px;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block .stack .single_person:hover{
+    cursor: pointer;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block .stack .single_person > img {
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+}
+
+.discoverNFT_main .discover_cards .single_card .img_block .stack .single_person.person2 {
+    left: 15px;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer {
+    display: grid;
+    padding: 10px 15px;
+    margin-top: 16px;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer > div span {
+    font-weight: 700;
+    line-height: normal;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer > div span.etherium {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #00AC4F;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer > div span.pages {
+    color: #838383;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer .last_child {
+    color: #5539A8;
+    border-top: 1px solid #F4F4F4;
+    padding-top: 10px;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer .last_child span:first-child {
+    padding: 8px 16px;
+    border-radius: 18px;
+    background-color: #F5F5F5;
+}
+
+.discoverNFT_main .discover_cards .single_card .card_footer .last_child span:first-child:hover {
+    background-color: #5539A8;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.more_nft_button {
+    margin: 0 auto;
+    padding: 10px 30px;
+    max-width: 150px;
+    border: 2px solid #3D00B7;
+    color: #4F33A3;
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.more_nft_button:hover {
+    cursor: pointer;
+    background-color: #5539A8;
+    color: #ffffff;
+}
+
+/* Media Query Section */
+@media screen and (max-width: 991px) {
+    .discoverNFT_main .discover_header .left_block {
+        max-width: 100%;
+     }
+
+}
+
+@media screen and (max-width: 600px) {
+    .discoverNFT_main .discover_cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}

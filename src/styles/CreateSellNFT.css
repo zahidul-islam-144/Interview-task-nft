@@ -1,0 +1,561 @@
+.create_sell_nft_main {
+  height: auto;
+  width: 100%;
+  margin: 85px 0 85px 0;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  /* border: 1px solid black; */
+}
+
+.create_sell_nft_main .first_col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  /* border: 1px solid; */
+}
+
+.create_sell_nft_main .first_col > div:first-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-end;
+  /* border: 1px solid; */
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  /* border: 1px solid; */
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb1 > div img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+  position: absolute;
+  bottom: -25px;
+  right: -35px;
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb2 {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+  height: 215px;
+  width: 195px;
+  position: relative;
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb2 > div img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+  position: absolute;
+  bottom: -25px;
+  right: -35px;
+}
+
+.create_sell_nft_main .first_col .thumb3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create_sell_nft_main .first_col .thumb3 > div {
+  height: 265px;
+  width: 240px;
+  position: relative;
+}
+
+.create_sell_nft_main .first_col .thumb3 > div img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: grid;
+  place-items: center;
+}
+
+.create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+  height: 71px;
+  width: 71px;
+  position: absolute;
+  bottom: 0;
+  top: 225px;
+  right: -25px;
+}
+
+.create_sell_nft_main .second_col {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.create_sell_nft_main .second_col .title {
+  max-width: 275px;
+  color: #000;
+  font-size: 32px;
+  font-family: Integral CF;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.create_sell_nft_main .second_col .text_contents {
+  max-width: 85%;
+  color: #636363;
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.create_sell_nft_main .second_col .signUp_btn {
+  padding: 10px;
+  max-width: 150px;
+  border: 2px solid #3d00b7;
+  background-color: #3d00b7;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  font-family: Averta Demo PE Cutted Demo;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.3px;
+}
+
+.create_sell_nft_main .second_col .signUp_btn:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #3d00b7;
+}
+
+/* media query */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .create_sell_nft_main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+    height: 11rem;
+    width: 8rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+    position: absolute;
+    bottom: 4px;
+    right: -18px;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb3 > div {
+    height: 11rem;
+    width: 10rem;
+    padding-left: 1.5rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    top: 140px;
+    right: -12px;
+  }
+
+  .create_sell_nft_main .second_col {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    padding: 35px 10px;
+  }
+
+  .create_sell_nft_main .second_col .title {
+    max-width: 275px;
+    color: #000;
+    font-size: 25px;
+    font-family: Integral CF;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .create_sell_nft_main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+    position: absolute;
+    bottom: -18px;
+    right: -22px;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+    height: 12rem;
+    width: 9.5rem;
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+    position: absolute;
+    bottom: -15px;
+    right: -18px;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .create_sell_nft_main .first_col .thumb3 > div {
+    height: 11rem;
+    width: 10rem;
+    position: relative;
+  }
+
+  .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    bottom: 0;
+    top: 148px;
+    right: -20px;
+  }
+
+  .create_sell_nft_main .second_col {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    padding: 35px 10px;
+  }
+
+  .create_sell_nft_main .second_col .title {
+    max-width: 275px;
+    color: #000;
+    font-size: 25px;
+    font-family: Integral CF;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .create_sell_nft_main {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+      height: 15rem;
+      width: 15rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+      position: absolute;
+      bottom: -18px;
+      right: -22px;
+      height: 3rem;
+      width: 3rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+      height: 12rem;
+      width: 9.5rem;
+      position: relative;
+      padding-top: 2rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+      position: absolute;
+      bottom: -15px;
+      right: -18px;
+      height: 3rem;
+      width: 3rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div {
+      height: 11rem;
+      width: 10rem;
+      position: relative;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      bottom: 0;
+      top: 148px;
+      right: -20px;
+    }
+  
+    .create_sell_nft_main .second_col {
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      padding: 35px 10px;
+    }
+  
+    .create_sell_nft_main .second_col .title {
+      max-width: 275px;
+      color: #000;
+      font-size: 25px;
+      font-family: Integral CF;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: normal;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .create_sell_nft_main {
+      display: grid;
+      grid-template-columns: 2fr 1.5fr;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+      height: 15rem;
+      width: 15rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+      position: absolute;
+      bottom: -18px;
+      right: -22px;
+      height: 3rem;
+      width: 3rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+      height: 12rem;
+      width: 9.5rem;
+      position: relative;
+      padding-top: 2rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+      position: absolute;
+      bottom: -15px;
+      right: -18px;
+      height: 3rem;
+      width: 3rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div {
+      height: 11rem;
+      width: 10rem;
+      position: relative;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      bottom: 0;
+      top: 148px;
+      right: -20px;
+    }
+  
+    .create_sell_nft_main .second_col {
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      padding: 35px 10px;
+    }
+  
+    .create_sell_nft_main .second_col .title {
+      max-width: 275px;
+      color: #000;
+      font-size: 25px;
+      font-family: Integral CF;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: normal;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .create_sell_nft_main {
+      display: grid;
+      grid-template-columns: 2fr 1.5fr;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+        height: 18rem;
+        width: 18rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+      position: absolute;
+      bottom: -18px;
+      right: -22px;
+      height: 4rem;
+      width: 4rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+        height: 14rem;
+        width: 11.5rem;
+        position: relative;
+        padding-top: 2.5rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+      position: absolute;
+      bottom: -15px;
+      right: -18px;
+      height: 4rem;
+      width: 4rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div {
+        height: 14rem;
+        width: 13rem;
+        position: relative;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+      bottom: 0;
+      top: 185px;
+      right: -20px;
+    }
+  
+    .create_sell_nft_main .second_col {
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 25px;
+      padding: 35px 10px;
+    }
+  
+    .create_sell_nft_main .second_col .title {
+      max-width: 275px;
+      color: #000;
+      font-size: 25px;
+      font-family: Integral CF;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: normal;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .create_sell_nft_main {
+      display: grid;
+      grid-template-columns: 2fr 1.5fr;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div {
+        height: 18rem;
+        width: 18rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb1 > div .thumbProfile {
+      position: absolute;
+      bottom: -18px;
+      right: -22px;
+      height: 4rem;
+      width: 4rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div {
+        height: 14rem;
+        width: 11.5rem;
+        position: relative;
+        padding-top: 2.5rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb_block .thumb2 > div .thumbProfile {
+      position: absolute;
+      bottom: -15px;
+      right: -18px;
+      height: 4rem;
+      width: 4rem;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div {
+        height: 14rem;
+        width: 13rem;
+        position: relative;
+    }
+  
+    .create_sell_nft_main .first_col .thumb3 > div .thumbProfile {
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+      bottom: 0;
+      top: 185px;
+      right: -20px;
+    }
+  
+    .create_sell_nft_main .second_col {
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 25px;
+      padding: 35px 10px;
+    }
+  
+    .create_sell_nft_main .second_col .title {
+      max-width: 275px;
+      color: #000;
+      font-size: 25px;
+      font-family: Integral CF;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: normal;
+    }
+}
+

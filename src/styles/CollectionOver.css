@@ -1,0 +1,271 @@
+/* .collectionOver .left{
+    background-color: blueviolet;
+} */
+
+.collectionOver .detailSection .profileInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.collectionOver .detailSection .profileInfo .profileName {
+    padding-left: 10px;
+}
+.collectionOver .detailSection .bidRatio span{
+    font-weight: bold;
+}
+
+.collectionOver .profileBid .bidProfile {
+    padding: 0px 0px 15px 0px;
+}
+
+.collectionOver .profileBid .bidProfile1{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.collectionOver .profileBid .bidProfile1 .bidProInfo .bidProDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+}
+
+.bidProDetails button {
+    padding: 8px;
+    gap: 5px;
+    width: 80.53px;
+    height: 32px;
+    border: 1px solid #00AC4F;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bidProDetails > img{
+    display: block;
+}
+.bidProDetails > p{
+    margin-bottom: 0 !important;
+}
+
+.bidProInfo > button {
+    width: auto;
+    min-width: 130px;
+    padding: 8px 18px 8px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bidProInfo > button.setBlue {
+    background-color: #3D00B7;
+    color: white;
+}
+
+.bidProInfo > button.setBlue:hover{
+    background-color: #ffffff;
+    color: #3D00B7;
+    border: 2px solid #3D00B7;
+}
+
+.bidProInfo > button.setWhite {
+    background-color: #ffffff;
+    color: #220970;
+    border: 2px solid #3D00B7;
+}
+
+.bidProInfo > button.setWhite:hover{
+    background-color: #3D00B7;
+    color: #ffffff;
+}
+
+.collectionOver .left.col-md-8 .profileBid.col-md-6 {
+    display: grid;
+}
+
+
+.right.borderLeft {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ECECEC;
+}
+
+.right .titleBlock,
+.right .peopleCollection .peopleName {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.right .titleBlock > span:nth-child(1) {
+    text-transform: capitalize;
+    font-family: 'Integral CF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.right .titleBlock > span:nth-child(2){
+    color: #3D00B7;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.right .peopleCollection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 350px;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.right.peopleCollection .peopleImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    /* background-color: #23097080; */
+}
+
+.right .peopleCollection .peopleImg > img.tick_icon {   
+    position: relative;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50%;
+    left: -16px;
+    bottom: 15px;
+}
+
+.right .peopleCollection .peopleName span:nth-child(1){
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 103%;
+    color: #000000;
+}
+
+.right .peopleCollection .peopleName span:nth-child(2){
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 103%;
+    letter-spacing: -0.025em;
+    color: #636363;
+    margin-top: 5px;
+}
+
+.right .peopleCollection .collectionPercentage {
+    color:#14C8B0;
+}
+
+.coverImage {
+    height: 440px;
+    width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.coverImage > img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.bidProImage {
+    height: 145px;
+    width: 145px;
+    overflow: hidden;
+}
+
+.bidProImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* --------------------------------------
+            MEDIA QUERY SECTION
+----------------------------------------- */
+
+@media screen and (max-width: 991px) {
+    .coverImage {
+        height: 360px;
+        width: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .detailSection{
+        margin: 35px 0px;
+    }
+    .collectionOver .detailSection .profileInfo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .collectionOver .detailSection .profileInfo  .profileName,
+    .collectionOver .detailSection .profileInfo .bidRatio {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .collectionOver .profileBid .bidProfile1{
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .collectionOver .profileBid .bidProfile1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .right .peopleCollection {
+        width: 100%;
+    }
+
+    .right.borderLeft.mobile {
+        padding: 4px;
+        border-left: none;
+        margin: 0 auto;
+    }
+
+    .right .titleBlock {
+        margin-top: 25px;
+    }
+    
+    .bidProInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,166 @@
+.bannerSection .bannerLeft h1{
+  padding-right: 100px;
+  font-weight: bolder;
+} 
+.bannerSection .bannerLeft p{
+    padding-right: 20px;
+    margin-bottom: 30px;
+} 
+.bannerLeft button{
+    width: 120px;
+    height: 40px;
+    background-color: #3D00B7;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.bannerLeft button:hover{
+    background-color: #ffffff;
+    color: #3D00B7;
+    border: 1px solid #3D00B7;
+}
+
+.bannerLeft .counting img{
+    width: 130px;
+    height: auto;
+    padding: 13px;
+    margin-top: 15px;
+}
+
+.bannerRight {
+    height: 440px;
+    width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerRight img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.bannerRight .tp {
+    position: absolute;
+    top: 45px;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.bannerRight .tp > div:first-child {
+    color: #FFF;
+font-size: 28px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.4px;
+}
+
+.bannerRight .tp > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 155px;
+}
+
+.bannerRight .tp > div:last-child span:first-child {
+    width: 32px;
+    height: 32.821px;
+}
+
+.bannerRight .tp > div:last-child span:first-child img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+}
+.bannerRight .tp > div:last-child span:last-child {
+    color: #FFF;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bannerRight .bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 40px;
+    /* border: 1px solid; */
+    width: 294px;
+    height: 68px;
+    margin: 0 auto;
+    left: 53px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(25px);
+}
+
+.bannerRight .bt > div:first-child {
+    display: grid;
+    place-items: start;
+}
+
+.bannerRight .bt > div:last-child {
+    display: grid;
+    place-items: start;
+}
+
+.bannerRight .bt > div:first-child span,
+.bannerRight .bt > div:last-child span {
+    color: #fff;
+}
+
+/* .bannerRight > div:nth-child(odd){
+    width: 101px;
+    height: 101px;
+    border-radius: 100%;
+    border: 1px solid;
+    position: absolute;
+    top: 188px;
+    left: -24px;
+} */
+
+/* --------------------------------------
+            MEDIA QUERY SECTION
+----------------------------------------- */
+
+
+@media screen and (max-width: 991px) {
+    .bannerRight {
+        height: 360px;
+        width: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .bannerRight .bt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        position: absolute;
+        bottom: 40px;
+        /* border: 1px solid; */
+        width: 275px;
+        height: 68px;
+        margin: 0 auto;
+        left: 24px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.20);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+    }
+}

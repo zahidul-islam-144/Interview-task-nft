@@ -1,0 +1,28 @@
+.footerSection{
+    width: 100%;
+    height: auto;
+}
+.footerSection .menu{
+    margin-top: 15px;
+}
+
+.footerSection .menu .sectionOne a{
+    padding-right: 4px;
+}
+
+.footerSection .menu .sectionTwo ul,
+.footerSection .menu .sectionThree ul {
+    padding-left: 0 !important;
+}
+
+.footerSection .menu .sectionTwo ul li,
+.footerSection .menu .sectionThree ul li {
+    list-style: none;
+}
+
+.footerSection .menu .sectionTwo ul li a,
+.footerSection .menu .sectionThree ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}

@@ -1,0 +1,214 @@
+.headerSection, .leftBlock, .rightBlock {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.headerSection{
+    border-bottom: 1px solid rgb(220, 215, 215);
+}
+.leftBlock, .rightBlock{
+    height: 60px;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 50px;
+    width: 120px;
+    /* background-color: #3D00B7; */
+}
+.logo img{
+    margin-top: 20px;
+}
+.navItems ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 70px;
+    margin-bottom: 0 !important;
+}
+.navItems ul li{
+    list-style: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.rightBlock {
+    margin-left: 75px;
+}
+.rightBlock .searchBar{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.rightBlock .searchField {
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 8px;
+    border-color: #00000026;
+}
+.rightBlock .searchBar .icon{
+    position: relative;
+    right: 25px;
+    top: 0;
+    cursor: pointer;
+}
+.uploadBtn, .connectBtn {
+    width: auto;
+    min-width: 130px;
+    border-radius: 25px;
+    padding: 8px 18px 8px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.uploadBtn {
+    background-color: #3D00B7;
+    color: #ffffff;
+}
+
+.uploadBtn:hover{
+    background-color: #ffffff;
+    color: #3D00B7;
+    border: 1px solid #3D00B7;
+}
+
+.connectBtn {
+    background-color: #ffffff;
+    color: #3D00B7;
+    border: 1px solid #3D00B7;
+}
+
+.connectBtn:hover {
+    background-color: #3D00B7;
+    color: #ffffff;
+    border: 1px solid #3D00B7;
+}
+
+.headerSection .hamBurgerMenu {
+    display: none;
+}
+
+
+/* --------------------------------------
+            MEDIA QUERY SECTION
+----------------------------------------- */
+
+@media screen and (max-width: 991px) {
+    .headerSection .leftBlock .navItems, 
+    .headerSection .rightBlock {
+        display: none;
+    }
+
+    .headerSection .hamBurgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobileViewNav {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobileViewNav .navItems ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 8px 0px 8px 0px;
+        padding-left: 0 !important;
+    }
+
+    .mobileViewNav .navItems ul li:hover{
+        background-color: rgb(125, 136, 221);
+        color: white;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .mobileViewNav .rightBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0 !important;
+    }
+
+
+    .uploadBtn {
+        width: auto;
+        min-width: 95px;
+        border-radius: 25px;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .connectBtn.mobile{
+        min-width: 150px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .rightBlock {
+        margin-left: 20px;
+        max-width: 445px;
+    }
+
+    .uploadBtn, .connectBtn {
+        width: auto;
+        min-width: 85px;
+        border-radius: 25px;
+        padding: 8px 18px 8px 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+    }
+
+   .connectBtn {
+        width: auto;
+        min-width: 100px;
+    }
+
+    .uploadBtn {
+        width: auto;
+        min-width: 85px;
+        border-radius: 25px;
+        padding: 8px 18px 8px 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        margin: 0px 5px;
+    }
+
+    .connectBtn {
+        width: auto;
+        min-width: 150px;
+        border-radius: 25px;
+        padding: 8px 18px 8px 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        margin: 0px 5px;
+    }
+}
