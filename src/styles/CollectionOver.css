@@ -269,3 +269,68 @@
     }
 
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .coverImage {
+        height: 360px;
+        width: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .detailSection{
+        margin: 35px 0px;
+    }
+    .collectionOver .detailSection .profileInfo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .collectionOver .detailSection .profileInfo  .profileName,
+    .collectionOver .detailSection .profileInfo .bidRatio {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .collectionOver .profileBid .bidProfile1{
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .collectionOver .profileBid .bidProfile1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .right .peopleCollection {
+        width: 100%;
+    }
+
+    .right.borderLeft.mobile {
+        padding: 4px;
+        border-left: none;
+        margin: 0 auto;
+    }
+
+    .right .titleBlock {
+        margin-top: 25px;
+    }
+    
+    .bidProInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+
